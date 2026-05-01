@@ -1,6 +1,6 @@
 package com.sushant;
 
-//Singleton
+//Singleton class
 public class DBConnection {
     private String Connection;
     private String username;

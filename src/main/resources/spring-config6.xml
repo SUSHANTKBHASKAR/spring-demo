@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean  class="com.sushant.Linga"/>-->
+<!--    <bean  class="com.sushant.Dinga" autowire="constructor"/>-->
+        <!--    it used constructor inject so Dinga must define a constructor to
+        initialize Linga object-->
+
+<!--    <bean id="linga" class="com.sushant.Linga"/>-->
+
+<!--    <bean id="dinga" class="com.sushant.Dinga" autowire="byName"/>-->
+    <!--    id and inside Dinga class variable name must be same
+     internally spring uses setter inject means Dinga must declare setter method-->
+
+    <bean id="linga" class="com.sushant.Linga"/>
+    <bean id="dinga" class="com.sushant.Dinga" autowire="byType"/>
+
+</beans>
